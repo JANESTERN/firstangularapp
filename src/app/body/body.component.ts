@@ -14,7 +14,14 @@ export class BodyComponent {
     setTimeout(()=>{
       this.allow=false
     },3000)
+  }
   
+  change(e:Event){
+    this.message= (e.target as HTMLInputElement).value
+    
+  }
+  learnmore(){
+    this.message='This is the place to be.  Welcome'
 
   }
 

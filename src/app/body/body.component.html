@@ -5,9 +5,13 @@
     </div>
     <div class="right_container">
         <p> 
+
             {{message}}
         </p>
-        <button [disabled]="allow">learn More</button>
+
+        <input (input)="change($event)"/>
+        <input [(ngModel)]="message"/>
+        <button [disabled]="allow" (click)="learnmore()">learn More</button>
 
 
     </div>
